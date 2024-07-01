@@ -31,7 +31,13 @@ const HomePage: React.FC = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
-  const objectData = Object.keys(data);
+  let objectData: string[] = [];
+  if (typeof data === "object" && data !== null) {
+    objectData = Object.keys(data);
+  } else {
+    console.error("Data is not an object:", data);
+  }
+
   const tenFirst = objectData.slice(0, 10).join("\n");
 
   return (
@@ -74,7 +80,7 @@ const HomePage: React.FC = () => {
             {tenFirst.split("\n").map((provider, index) => (
               <p key={index}>{provider}</p>
             ))}
-          </div>{" "}
+          </div>
           <br />
         </motion.div>
       </div>
