@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
             Session Storage Button - ({sessionCounter})
           </button>
           <br />
-          <a>
+          <a href="https://api.apis.guru/v2/list.json">
             Fetching ten first index from https://api.apis.guru/v2/list.json
             using axios and custom hook:
           </a>
