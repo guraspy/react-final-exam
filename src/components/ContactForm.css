@@ -1,0 +1,36 @@
+.center {
+  text-align: center;
+}
+
+.form-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d2d2d2;
+  border-radius: 10px;
+}
+.form-group p {
+  color: red;
+  margin-top: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #646cff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #4646e0;
+}
